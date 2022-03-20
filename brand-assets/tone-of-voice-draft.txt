@@ -1,0 +1,12 @@
+Tahoe-LAFS is a Free and Open decentralized cloud storage system. It distributes your data across multiple servers. Even if some of the servers fail or are taken over by an attacker, the entire file store continues to function correctly, preserving your privacy and security.
+
+Tahoe-LAFS is employed by many organizations to handle sensitive information and decentralize storage, in this way also preventing censorship. How we communicate should reflect the seriousness and importance of these objectives.
+
+The concept of “Voice” reflects communication goals that do not change. “Tone” is how the “Voice” varies, given a user’s context.
+
+Voice
+Use active voice; be precise and direct. Ambiguity can create security risks (e.g., if it is unclear whether a step we ask the user to take is required or optional for their security). It is important to keep written language simple and concise, in service of users' specific goals. This also aids faithful translation and understanding by non-native speakers.
+
+Tone
+Tone should be neutral, nonjudgmental, and crafted to influence action without inciting panic or indifference. Try to manage a user’s expectations and to inform their choices with empathy for the context of their activity. Users engage with Tahoe-LAFS because of trust in it and the organizations or groups of users that install it. It is paramount to honor and respect that trust. For example: a severe or urgent security issue should be toned differently than guiding text. Whether in the user interface, the documentation, or support communications, phrases like “Important”, “Action required”, “Tip”, “Further reading”, should always be used deliberately. Empathize in a manner consistent with our voice. For example, if you want to communicate that a certain part of the installation process will take 3 hours (respecting our users’ time), there is no need for long prose—instead, give a simple indicator in the documentation to that effect.
+
