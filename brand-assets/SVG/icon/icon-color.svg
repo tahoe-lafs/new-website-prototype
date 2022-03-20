@@ -7,9 +7,9 @@
    viewBox="0 0 39.687502 39.6875"
    version="1.1"
    id="svg18956"
-   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
    sodipodi:docname="icon-color.svg"
-   inkscape:export-filename="C:\Users\Anxhelo\Documents\GitHub\new-website-prototype\brand-assets\PNG\icon\iconl-color.png"
+   inkscape:export-filename="C:\Users\Anxhelo\Documents\GitHub\new-website-prototype\brand-assets\PNG\icon\icon-color.png"
    inkscape:export-xdpi="192"
    inkscape:export-ydpi="192"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -26,15 +26,15 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="1.9250605"
-     inkscape:cx="-16.10339"
-     inkscape:cy="56.102132"
+     inkscape:zoom="2.7224467"
+     inkscape:cx="-13.774375"
+     inkscape:cy="107.0728"
      inkscape:window-width="1920"
      inkscape:window-height="1027"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g17777"
      units="px" />
   <defs
      id="defs18953">
@@ -125,57 +125,92 @@
     <g
        id="g17777"
        transform="matrix(0.44550774,0,0,0.44550774,279.03851,121.74904)">
-      <line
-         class="arrow"
-         x1="-370.99231"
-         y1="106.39877"
-         x2="-370.99231"
-         y2="71.398773"
+      <g
          id="line13-3-7"
-         style="stroke:#000000;stroke-width:2;marker-end:url(#arrowhead-1-6)" />
-      <line
-         class="arrow"
-         x1="-370.99231"
-         y1="106.39877"
-         x2="-378.99231"
-         y2="85.398773"
+         class="arrow">
+        <path
+           style="color:#000000;fill:#222831;stroke-width:2;-inkscape-stroke:none"
+           d="M -370.99231,106.39877 V 71.398773"
+           id="path1482" />
+        <path
+           style="color:#000000;fill:#222831;-inkscape-stroke:none"
+           d="m -371.99219,71.398437 v 35.000003 h 2 V 71.398437 Z"
+           id="path1484" />
+        <g
+           id="g1476">
+          <path
+             d="m -373.99231,73.398773 3,-9 3,9 z"
+             id="path1478"
+             style="fill:#222831;fill-opacity:1" />
+        </g>
+      </g>
+      <g
          id="line15-4-0"
-         style="stroke:#000000;stroke-width:2;marker-end:url(#arrowhead-1-6)" />
-      <line
-         class="arrow"
-         x1="-370.99231"
-         y1="106.39877"
-         x2="-362.99231"
-         y2="85.398773"
+         class="arrow">
+        <path
+           style="color:#000000;fill:#222831;stroke-width:2;-inkscape-stroke:none"
+           d="m -370.99231,106.39877 -4.85605,-12.747134 -2.96334,-7.778751 -0.18061,-0.474112"
+           id="path1451" />
+        <path
+           style="color:#000000;fill:#222831;-inkscape-stroke:none"
+           d="m -378.05859,85.042969 -1.86914,0.710937 0.18164,0.47461 2.96289,7.779296 4.85547,12.746098 1.86914,-0.71094 -4.85547,-12.748048 -2.96289,-7.777344 z"
+           id="path1453" />
+        <g
+           id="g1445">
+          <path
+             d="m -381.0838,88.335719 -0.40043,-9.478379 6.00737,7.342449 z"
+             id="path1447"
+             style="fill:#222831;fill-opacity:1" />
+        </g>
+      </g>
+      <g
          id="line17-7-5"
-         style="stroke:#000000;stroke-width:2;marker-end:url(#arrowhead-1-6)" />
-      <circle
+         class="arrow">
+        <path
+           style="color:#000000;fill:#222831;stroke-width:1.99997;-inkscape-stroke:none"
+           d="m -370.99231,106.39877 8,-20.999997"
+           id="path1513" />
+        <path
+           style="color:#000000;fill:#222831;-inkscape-stroke:none"
+           d="m -363.92773,85.042969 -8,21.000001 1.86914,0.71094 8,-21.000004 z"
+           id="path1515" />
+        <g
+           id="g1507">
+          <path
+             d="m -366.50776,86.199762 6.00742,-7.342403 -0.4005,9.478376 z"
+             id="path1509"
+             style="fill:#222831;fill-opacity:1" />
+        </g>
+      </g>
+      <ellipse
          fill="#ff0000"
-         r="10"
          id="circle19-7-7"
          cx="-370.99231"
-         cy="106.39877" />
+         cy="106.39877"
+         rx="9.9998264"
+         ry="10"
+         style="fill:#f05454;fill-opacity:1" />
       <circle
          class="storage"
          r="8"
          cy="56.398773"
          id="circle21-2-4"
          cx="-370.99231"
-         style="fill:#000000" />
+         style="fill:#222831;fill-opacity:1" />
       <circle
          class="storage"
          cy="71.398773"
          cx="-384.99231"
          id="circle23-4-8"
          r="8"
-         style="fill:#000000" />
+         style="fill:#222831;fill-opacity:1" />
       <circle
          class="storage"
          r="8"
          cy="71.398773"
          cx="-356.99231"
          id="circle25-6-0"
-         style="fill:#000000" />
+         style="fill:#222831;fill-opacity:1" />
     </g>
   </g>
 </svg>

@@ -7,7 +7,7 @@
    viewBox="0 0 39.687502 39.6875"
    version="1.1"
    id="svg18956"
-   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
    sodipodi:docname="icon-black.svg"
    inkscape:export-filename="C:\Users\Anxhelo\Documents\GitHub\new-website-prototype\brand-assets\PNG\icon\icon-black.png"
    inkscape:export-xdpi="192"
@@ -26,15 +26,15 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="1.9250605"
-     inkscape:cx="-16.10339"
-     inkscape:cy="56.102132"
+     inkscape:zoom="0.48126513"
+     inkscape:cx="-936.07448"
+     inkscape:cy="-331.41816"
      inkscape:window-width="1920"
      inkscape:window-height="1027"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g17777"
      units="px" />
   <defs
      id="defs18953">
@@ -126,58 +126,84 @@
        id="g17777"
        transform="matrix(0.44550774,0,0,0.44550774,279.03851,121.74904)"
        style="fill:#000000">
-      <line
-         class="arrow"
-         x1="-370.99231"
-         y1="106.39877"
-         x2="-370.99231"
-         y2="71.398773"
+      <g
          id="line13-3-7"
-         style="stroke:#000000;stroke-width:2;marker-end:url(#arrowhead-1-6);fill:#000000" />
-      <line
          class="arrow"
-         x1="-370.99231"
-         y1="106.39877"
-         x2="-378.99231"
-         y2="85.398773"
+         style="fill:#222831;fill-opacity:1">
+        <path
+           style="color:#000000;-inkscape-stroke:none;fill:#222831;fill-opacity:1"
+           d="m -371.99219,71.398437 v 35.000003 h 2 V 71.398437 Z"
+           id="path913" />
+        <g
+           id="g907"
+           style="fill:#222831;fill-opacity:1">
+          <path
+             d="m -373.99231,73.398773 3,-9 3,9 z"
+             id="path909"
+             style="fill:#222831;fill-opacity:1" />
+        </g>
+      </g>
+      <g
          id="line15-4-0"
-         style="stroke:#000000;stroke-width:2;marker-end:url(#arrowhead-1-6);fill:#000000" />
-      <line
-         class="arrow"
-         x1="-370.99231"
-         y1="106.39877"
-         x2="-362.99231"
-         y2="85.398773"
+         class="arrow">
+        <path
+           style="color:#000000;-inkscape-stroke:none;fill:#222831;fill-opacity:1"
+           d="m -378.05859,85.042969 -1.86914,0.710937 8,21.000004 1.86914,-0.71094 z"
+           id="path903" />
+        <g
+           id="g897"
+           style="fill:#222831;fill-opacity:1">
+          <path
+             d="m -381.08378,88.335735 -0.4005,-9.478376 6.00742,7.342404 z"
+             id="path899"
+             style="fill:#222831;fill-opacity:1" />
+        </g>
+      </g>
+      <g
          id="line17-7-5"
-         style="stroke:#000000;stroke-width:2;marker-end:url(#arrowhead-1-6);fill:#000000" />
+         class="arrow"
+         style="fill:#222831;fill-opacity:1">
+        <path
+           style="color:#000000;-inkscape-stroke:none;fill:#222831;fill-opacity:1"
+           d="m -363.92773,85.042969 -8,21.000001 1.86914,0.71094 8,-21.000004 z"
+           id="path923" />
+        <g
+           id="g917"
+           style="fill:#222831;fill-opacity:1">
+          <path
+             d="m -366.50776,86.199763 6.00742,-7.342404 -0.4005,9.478376 z"
+             id="path919"
+             style="fill:#222831;fill-opacity:1" />
+        </g>
+      </g>
       <circle
          fill="#ff0000"
          r="10"
          id="circle19-7-7"
          cx="-370.99231"
          cy="106.39877"
-         style="fill:#000000" />
+         style="fill:#222831;fill-opacity:1" />
       <circle
          class="storage"
          r="8"
          cy="56.398773"
          id="circle21-2-4"
          cx="-370.99231"
-         style="fill:#000000" />
+         style="fill:#222831;fill-opacity:1" />
       <circle
          class="storage"
          cy="71.398773"
          cx="-384.99231"
          id="circle23-4-8"
          r="8"
-         style="fill:#000000" />
+         style="fill:#222831;fill-opacity:1" />
       <circle
          class="storage"
          r="8"
          cy="71.398773"
          cx="-356.99231"
          id="circle25-6-0"
-         style="fill:#000000" />
+         style="fill:#222831;fill-opacity:1" />
     </g>
   </g>
 </svg>
