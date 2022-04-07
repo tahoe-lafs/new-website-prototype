@@ -1,0 +1,27 @@
+{{ if .IsHome }}
+<header class="background-gray-900">
+{{ if len .Site.Menus }}
+{{ partial "menu.html" . }}
+{{ end }}
+
+<div class="container py-5 my-4 text-white">
+    <div class="row home py-2 align-items-center justify-content-between">
+        <div class="col-xl-6 col-lg-11 col-10">
+            <h1>A better way to <span>safeguard your data</span></h1>
+            <p class="mb-5">Tahoe-LAFS is a Free and Open decentralized cloud storage system that distributes your data across multiple servers.</p>
+            <a href="/downloads/">Download</a>
+        </div>
+        <div class="col-xl-5 col-11 py-3 d-none d-xl-block">
+            <img class="img-fluid" src="/img/illustration.png" alt="Data illustration">
+        </div>
+    </div>
+</div>
+
+</header>
+{{ else }}
+<header>
+{{ if len .Site.Menus }}
+{{ partial "menu.html" . }}
+{{ end }}
+</header>
+{{ end }}
