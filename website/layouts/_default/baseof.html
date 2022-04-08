@@ -5,13 +5,14 @@
     {{ partial "head.html" . }}
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
     <a class="screen-reader-text" href="#content">Skip to content</a>
 
     {{ partial "header.html" . }}
 
     <div id="content" class="content">
-        {{ block "main" . }}{{ end }}
+        {{ block "main" . }}
+        {{ end }}
     </div>
 
     {{ block "footer" . }}

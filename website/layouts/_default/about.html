@@ -1,0 +1,106 @@
+{{ define "main" }}
+<main class="page py-5">
+    <div class="container-fluid">
+        <div class="container">
+
+            {{ if .Content }}
+            <article>
+                <div class="page-content">
+                    {{ . }}
+                </div>
+            </article>
+            {{ end }}
+
+            <section id="active-volunteers">
+                <h2>Active Volunteers</h2>
+                <div class="row pt-lg-4 pt-0">
+                {{ range (where .Site.RegularPages "Type" "people") }}
+                    <div class="col-xl-4 col-lg-6 col-12">
+                        <div class="row mb-3 mb-lg-5">
+                            <div class="col-xxl-2 col-xl-12 col-2">
+                                <img class="img-fluid pb-3" src="/img/people/{{ .Page.Params.image }}" alt="Portrait photo of {{ .Page.Params.name }}">
+                            </div>
+                            <div class="col-xxl-10 col-xl-12 col-10 circle-icons">
+                                <h3>{{ .Page.Params.name }}</h3>
+                                <p>{{ .Page.Params.position }}</p>
+                                {{ if .Page.Params.website }}
+                                    <a href="{{ .Page.Params.website }}" target="_blank" rel="noopener noreferrer" aria-label="{{ .Page.Params.name }}'s Website"><i class="fa-solid fa-globe" aria-hidden="true"></i></a>
+                                {{ end }}
+                                {{ if .Page.Params.twitter }}
+                                    <a href="https://twitter.com/{{ .Page.Params.twitter }}" target="_blank" rel="noopener noreferrer" aria-label="{{ .Page.Params.name }}'s Twitter"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a>
+                                {{ end }}
+                                {{ if .Page.Params.github }}
+                                    <a href="https://github.com/{{ .Page.Params.github }}" target="_blank" rel="noopener noreferrer" aria-label="{{ .Page.Params.name }}'s GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+                                {{ end }}
+                                {{ if .Page.Params.email }}
+                                    <a href="mailto:{{ .Page.Params.email }}" aria-label="{{ .Page.Params.name }}'s email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>
+                                {{ end }}
+                                {{ if .Page.Params.gpg }}
+                                    <a href="{{ .Page.Params.gpg }}" target="_blank" rel="noopener noreferrer" aria-label="{{ .Page.Params.name }}'s GPG key"><i class="fa-solid fa-key" aria-hidden="true"></i></a>
+                                {{ end }}
+                            </div>
+                        </div>
+                    </div>
+                {{ end }}
+                </div>
+            </section>
+
+            <section class="py-4" id="hall-of-fame">
+                <a href="https://www.tahoe-lafs.org/hacktahoelafs/" target="_blank" rel="noopener noreferrer"><h2>People who broke Tahoe-LAFS</h2></a>
+
+                <p><b>July 20, 2008 through October 2, 2012</b> — four years of <a href="https://www.tahoe-lafs.org/trac/tahoe-lafs/wiki/Doc#TheParadeofReleaseNotes" target="_blank" rel="noopener noreferrer">new releases of Tahoe-LAFS</a> have come out and nobody has reported a serious security flaw in any of them. (Well, actually we have found a couple of serious security flaws that we had accidentally put in, but we didn't design t-shirts for ourselves to celebrate.) Surely the fourth ever "Hack Tahoe-LAFS!" prize is waiting to be awarded to a deserving investigator. Hurry and win it before someone else does! See <a href="https://www.tahoe-lafs.org/trac/tahoe-lafs/wiki/ViewTickets" target="_blank" rel="noopener noreferrer">the catalog of open tickets</a> for some possible avenues of attack</p>
+                    
+                <p><b>August 22, 2008</b> — a paper about Tahoe-LAFS, the Least-Authority Filesystem has been accepted into the Storage Security and Survivability Workshop.</p>
+                    
+                <p><b>July 21, 2008</b> — Tahoe-LAFS v1.2.0 has been released, fixing the flaw that Christian Grothoff discovered. Please see The Release Notes for details.</p>
+                    
+                <p><b>July 20, 2008</b> — Christian Grothoff has discovered a flaw in the cryptographic integrity check for immutable files. See <a href="https://www.tahoe-lafs.org/pipermail/tahoe-dev/2008-July/000689.html" target="_blank" rel="noopener noreferrer">his note to tahoe-dev</a>. It is not too severe, but we're definitely going to fix it. More details will be forthcoming.</p>
+                    
+                <p><b>July 18, 2014</b> — The "Hack Tahoe-LAFS!" contest is announced. Read the announcement.</p>
+
+                <p>The security flaws that have been discovered in earlier versions of Tahoe-LAFS may generalize to other systems -- if you are a security hacker you may be interested in the specific attacks and defenses because they may be applicable to your work.</p>
+            </section>
+
+            <section class="py-4" id="gsoc-2013">
+                <h2>GSoC 2013 Students and Their Mentors</h2>
+                <p><b>Mark Berger</b>:: Zooko Wilcox-O'Hearn, Daira Hopwood, and Brian Warner</p>
+            </section>
+
+            <section class="py-4" id="gsoc-2010">
+                <h2>GSoC 2010 Students and Their Mentors</h2>
+                <p><b>Kevan Carstensen</b>:: Brian Warner</p>
+                <p><b>Josip Lisec</b>:: Daira Hopwood</p>
+                <p><b>Yu Xue</b>:: Jack Lloyd</p>
+                <p><b>Faruque Sarker</b>:: Zooko</p>
+            </section>
+
+            <section class="py-4" id="contributors">
+                <h2>Contributors of Source Code and Docs</h2>
+                <p>See <a href="https://tahoe-lafs.org/trac/tahoe-lafs/browser/trunk/CREDITS" target="_blank" rel="noopener noreferrer">the CREDITS file</a> for a list of everyone who has contributed code and docs which we included in the Tahoe-LAFS source tree. </p>
+            </section>
+
+            <section class="py-4" id="emeritus-volunteers">
+                <h2>Emeritus Volunteers</h2>
+                <p>David Triendl<br />Patrick "Marlowe" McDonald</p>
+            </section>
+            
+            <hr />
+
+            <div class="page-info">
+                {{- if .GitInfo }}
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="4"></circle>
+                        <line x1="1.05" y1="12" x2="7" y2="12"></line>
+                        <line x1="17.01" y1="12" x2="22.96" y2="12"></line>
+                    </svg>
+                    <a href="{{ .Site.Params.gitUrl -}}{{ .GitInfo.Hash }}" target="_blank" rel="noopener"
+                        title="Commit message: {{ .GitInfo.Subject}}">{{ .GitInfo.AbbreviatedHash}}</a> @ {{ if .Site.Params.dateformNum }}<time datetime="{{ dateFormat .Site.Params.dateformNum .GitInfo.AuthorDate.Local }}">{{ dateFormat .Site.Params.dateformNum .GitInfo.AuthorDate.Local }}</time>{{ else }}<time datetime="{{ dateFormat .Site.Params.dateformNum .GitInfo.AuthorDate.Local }}">{{ dateFormat "2006-01-02" .GitInfo.AuthorDateLocal }}</time>{{ end }}
+                </p>
+                {{- end }}
+            </div>
+        </div>
+    </div>
+</main>
+{{ end }}

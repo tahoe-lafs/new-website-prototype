@@ -19,9 +19,20 @@
 
 </header>
 {{ else }}
-<header>
+<header class="background-dark-blue">
 {{ if len .Site.Menus }}
 {{ partial "menu.html" . }}
 {{ end }}
+
+<div class="container-fluid text-white">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-xl-9 col-lg-10 col-12">
+                <h1 class="page-title">{{ .Title | markdownify }}</h1>
+                <p class="page-subtitle">{{ .Page.Params.subtitle }}</p>
+            </div>
+        </div>
+    </div>
+</div>
 </header>
 {{ end }}
