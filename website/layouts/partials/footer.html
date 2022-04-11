@@ -1,0 +1,74 @@
+<footer class="py-4 mt-auto">
+  <div class="container-fluid">
+    <div class="container">
+      <div class="row py-5 pt-lg-5 cta justify-content-between">
+        <div class="col-xl-3 col-lg-4 col-12 pb-xl-0 pb-4 d-flex flex-column">
+          <p>Project</p>
+          <a href="https://tahoe-lafs.org/trac/tahoe-lafs/wiki" target="_blank"
+          rel="noopener noreferrer">Wiki</a>
+          <a href="https://tahoe-lafs.org/trac/tahoe-lafs/timeline" target="_blank"
+          rel="noopener noreferrer">Timeline</a>
+          <a href="https://tahoe-lafs.org/trac/tahoe-lafs/roadmap" target="_blank"
+          rel="noopener noreferrer">Roadmap</a>
+          <a href="https://tahoe-lafs.org/trac/tahoe-lafs/browser" target="_blank"
+          rel="noopener noreferrer">Source code</a>
+          <a href="https://tahoe-lafs.org/trac/tahoe-lafs/wiki/ViewTickets" target="_blank"
+          rel="noopener noreferrer">Tickets</a>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-12 pb-xl-0 pb-4 d-flex flex-column">
+          <p>Get involved</p>
+          <!-- <a class="arrow-link" href="https://tinyletter.com/uracreative" target="_blank"
+            rel="noopener noreferrer">Newsletter</a> -->
+          <a href="https://lists.tahoe-lafs.org/mailman/listinfo/tahoe-dev" target="_blank"
+          rel="noopener noreferrer">Mailing list</a>
+          <a href="https://tahoe-lafs.org/trac/tahoe-lafs/wiki/Dev" target="_blank"
+          rel="noopener noreferrer">Contribute</a>
+          <a href="https://tahoe-lafs.readthedocs.io/en/latest/Installation/install-tahoe.html" target="_blank"
+          rel="noopener noreferrer">Install</a>
+          <a href="https://tahoe-lafs.org/trac/tahoe-lafs/wiki/Doc" target="_blank"
+          rel="noopener noreferrer">Docs</a>
+          <a href="https://tahoe-lafs.org/trac/tahoe-lafs/wiki/FAQ" target="_blank"
+          rel="noopener noreferrer">FAQ</a>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-12 pb-xl-0 pb-4 d-flex flex-column">
+          <p>Links</p>
+          {{- $firstUrlElement := print "/" (index (split .RelPermalink "/") 1) "/" -}}
+          {{- range .Site.Menus.main -}}
+            <a href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+          {{ end }}
+        </div>
+        <div class="col-xl-2 col-lg-4 col-lg-4 col-12 pb-xl-0 pb-4">
+          <p>Find us on</p>
+          <div class="pt-2">
+            {{- with .Site.Params.social }}
+            {{ partial "social-icons.html" . }}
+            {{- end }}
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="row justify-content-between align-items-center">
+        <div class="col-xxl-4 col-xl-12">
+          <nav class="navbar navbar-expand-lg" aria-label="Secondary">
+            <div class="navbar-collapse" id="footerLinks">
+              <div class="navbar-nav flex-row">
+                {{- $firstUrlElement := print "/" (index (split .RelPermalink "/") 1) "/" -}}
+                {{- range .Site.Menus.footer -}}
+                <a class="nav-link {{ if eq ($firstUrlElement|lower) (.URL|lower) }}active{{end}}" {{ if eq
+                  ($firstUrlElement|lower) (.URL|lower) }}aria-current="page"{{end}} href="{{ .URL | absLangURL }}">{{
+                  .Name
+                  }}</a>
+                {{ end }}
+                </div>
+            </div>
+          </nav>
+        </div>
+        <div class="col-xxl-8 col-xl-12 d-flex justify-content-xxl-end justify-content-start">
+          <p class="copyright mb-0">© Tahoe-LAFS {{ now.Year }}. {{ .Site.Copyright | markdownify }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+{{ partial "javascript.html" . }}
